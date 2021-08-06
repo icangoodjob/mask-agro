@@ -1,0 +1,331 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>Главная</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link active">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="main-info">
+		<div class="container">
+			<h1 class="main-info__title">
+				ПРОДАЕМ ОПТОМ <span>ОВОЩИ, ФРУКТЫ, ЦВЕТЫ И ЯГОДЫ</span> С СОБСТВЕННОЙ ФЕРМЫ
+			</h1>
+			<div class="main-info__subtitle">Вся продукция выращена на наших полях в предгорье Кавказа и продается напрямую без переплат с доставкой по России.</div>
+			<a href="#" class="main-info__button">
+				Узнать наличие
+			</a>
+		</div>
+	</section>
+	<div class="actions">
+		<div class="container">
+			<div class="actions__row">
+				<div class="actions__column">
+					<div class="actions__item">
+						<div class="actions__image"><img src="img/icons/shopping.png" alt=""></div>
+						<div class="actions__description">Выбираете товар, добавляете его в корзину и отправляете заявку менеджеру.</div>
+					</div>
+				</div>
+				<div class="actions__column">
+					<div class="actions__item">
+						<div class="actions__image"><img src="img/icons/service.png" alt=""></div>
+						<div class="actions__description">В течении дня менеджер связывается с Вами для
+						обсуждения деталей заказа.</div>
+					</div>
+				</div>
+				<div class="actions__column">
+					<div class="actions__item actions__item-3">
+						<div class="actions__image"><img src="img/icons/delivery.png" alt=""></div>
+						<div class="actions__description">Мы отгружаем товар в день заказа, оплата производится
+						Вами в момент получения.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="category-section">
+		<div class="container">
+			<h2 class="category__title">Категории</h2>
+			<div class="category__body">
+				<div class="category__row">
+					<div class="category__column">
+						<a href="category.html" class="category__item">
+							<div class="category__image"><img src="img/category-1.png" alt=""></div>
+							<div class="category__name">Овощи</div>
+						</a>
+					</div>
+					<div class="category__column">
+						<a href="category.html" class="category__item">
+							<div class="category__image"><img src="img/category-2.png" alt=""></div>
+							<div class="category__name">Фрукты</div>
+						</a>
+					</div>
+					<div class="category__column">
+						<a href="category.html" class="category__item">
+							<div class="category__image"><img src="img/category-3.png" alt=""></div>
+							<div class="category__name">Ягоды</div>
+						</a>
+					</div>
+					<div class="category__column">
+						<a href="category.html" class="category__item">
+							<div class="category__image"><img src="img/category-4.png" alt=""></div>
+							<div class="category__name">Бахчевые</div>
+						</a>
+					</div>
+					<div class="category__column">
+						<a href="category.html" class="category__item">
+							<div class="category__image"><img src="img/category-5.png" alt=""></div>
+							<div class="category__name">Цветы</div>
+						</a>
+					</div>
+					<div class="category__column">
+						<a href="category.html" class="category__item icon-item">
+							<div class="category__image"><img src="img/category-icon.png" alt=""></div>
+							<div class="category__name">Далее</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-block">
+		<div class="container">
+			<div class="text-block__body">
+				<div class="text-block__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+						</div>
+						<div class="swiper-slide">
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+						</div>
+						<div class="swiper-slide">
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.</p>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="container">
+			<h2 class="reviews__title">Отзывы компании</h2>
+			<div class="reviews__body">
+				<div class="reviews__row">
+					<div class="reviews__column">
+						<div class="reviews-item">
+							<div class="reviews__image"><img src="img/reviews-1.jpg" alt=""></div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__text">На черноморском побережье в сезон очень сложно найти качественную кукурузу. Макс-Агродля нас является основным поставщиком кукурузы для нашей гостиницы. В любое время и в любом объеме мы знаем к кому обратиться.
+								</div>
+								<div class="reviews-item__author">Катерина Меркулова</div>
+								<div class="reviews-item__author-post">Управляющая гостиницей</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__column">
+						<div class="reviews-item reverse">
+							<div class="reviews__image"><img src="img/reviews-2.jpg" alt=""></div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__text">Очень рада сотрудничеству с компанией Макс-Агро: всегда свежие и качественные овощи, которые поставляются точно в срок. Макс-Агро -это новый уровень в фермерском хозяйстве Успехов и процветания!
+								</div>
+								<div class="reviews-item__author">Екатерина Миронова</div>
+								<div class="reviews-item__author-post">Специалист по закупкам</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__column">
+						<div class="reviews-item">
+							<div class="reviews__image"><img src="img/reviews-3.jpg" alt=""></div>
+							<div class="reviews-item__body">
+								<div class="reviews-item__text">К 14 февраля или 8 марта найтикачественные цветы оптом – задача не из легких. Мой домфлористики нашел для себяидеальный вариант  Макс-Агро.Большой выбор сортов, приемлемая цена и главное – бесперебойные поставки каждый год.
+								</div>
+								<div class="reviews-item__author">Людмила Линь</div>
+								<div class="reviews-item__author-post">Директор дома флористики</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="company">
+		<div class="container">
+			<h2 class="company__title">С кем мы работаем</h2>
+			<div class="company__body">
+				<div class="company__row">
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-1.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-2.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-3.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-4.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-5.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-6.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-7.png" alt=""></div>
+						</a>
+					</div>
+					<div class="company__column">
+						<a href="#" class="company__item">
+							<div class="company__image"><img src="img/company-8.png" alt=""></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__inner">
+					<a href="index.html" class="footer__logo"><img src="img/logo.png" alt=""></a>
+					<div class="footer__menu">
+						<div class="footer-item">
+							<button class="footer__name">Покупателям</button>
+							<ul class="footer__list">
+								<li><a class="footer__link" href="#">Как выбрать товар</a></li>
+								<li><a class="footer__link" href="#">Обратная связь</a></li>
+								<li><a class="footer__link" href="#">О сервисе</a></li>
+								<li><a class="footer__link" href="#">Возвраты </a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<button class="footer__name">Сотрудничество</button>
+							<ul class="footer__list">
+								<li><a class="footer__link" href="#">Новости компании</a></li>
+								<li><a class="footer__link" href="#">Партнёрская программа</a></li>
+								<li><a class="footer__link" href="#">Производителям</a></li>
+							</ul>
+						</div>
+						<div class="footer-item">
+							<button class="footer__name">КАБИНЕТ</button>
+							<ul class="footer__list">
+								<li><a class="footer__link" href="#">Доставка в регионы</a></li>
+								<li><a class="footer__link" href="#">Личный кабинет</a></li>
+								<li><a class="footer__link" href="#">Сообщить о проблеме</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		const swiper1 = new Swiper('.text-block__slider', {
+			loop: true,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 0,
+			speed: 800,
+			autoHeight: true,
+			centeredSlides: true,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "bullets",
+				clickable: true,
+			},
+			breakpoints: {
+				300: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				991: {
+					slidesPerView: 1,
+				},
+			},
+		});
+	</script>
+</body>
+</html>

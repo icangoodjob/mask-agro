@@ -1,0 +1,516 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>Каталог</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div data-da="catalog-content__item,2,991" class="catalog-cart__box adaptive">
+					<a href="basket.html" class="catalog__cart"><img src="img/cart.png" alt=""></a>
+					<span class="catalog__value">21+</span>
+				</div>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link active">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="catalog-page">
+			<div class="container">
+				<a href="#" class="return__btn"></a>
+				<div class="catalog-head">
+					<div class="catalog-head__left">
+						<h1 class="catalog__title">Каталог</h1>
+						<div class="breadcrumbs-container">
+							<div class="breadcrumbs">
+								<ul class="breadcrumbs__list">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-head__right">
+						<div data-da="catalog-content__item,2,991" class="catalog-cart__box">
+							<a href="basket.html" class="catalog__cart"><img src="img/cart.png" alt=""></a>
+							<span class="catalog__value">21+</span>
+						</div>
+						<select name="price" class="form__select">
+							<option value="1" selected>Цена по возрастанию</option>
+							<option value="2">Цена по убыванию</option>
+							<option value="3">Наименование</option>
+						</select>
+					</div>
+				</div>
+				<div class="catalog-content">
+					<div class="catalog-content__body">
+						<h2 class="catalog-content__title">Овощи</h2>
+						<div class="catalog-content__row">
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-1.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-2.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-3.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-4.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-5.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-6.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/catalog-7.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image icon-image">
+										<a href="#"><img src="img/catalog-icon.png" alt=""></a>
+									</div>
+									<div class="catalog-content__name">Все товары</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-content__body">
+						<h2 class="catalog-content__title">ФРУКТЫ</h2>
+						<div class="catalog-content__row">
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-1.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-2.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-3.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-4.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-5.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-6.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/fruit-7.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image icon-image">
+										<a href="#"><img src="img/catalog-icon.png" alt=""></a>
+									</div>
+									<div class="catalog-content__name">Все товары</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-content__body">
+						<h2 class="catalog-content__title">Ягоды</h2>
+						<div class="catalog-content__row">
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-1.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-2.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-3.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-4.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-5.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-6.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/berry-7.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image icon-image">
+										<a href="#"><img src="img/catalog-icon.png" alt=""></a>
+									</div>
+									<div class="catalog-content__name">Все товары</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-content__body">
+						<h2 class="catalog-content__title">Бахчевые</h2>
+						<div class="catalog-content__row">
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-1.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-2.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-3.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-4.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-5.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-6.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/melons-7.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image icon-image">
+										<a href="#"><img src="img/catalog-icon.png" alt=""></a>
+									</div>
+									<div class="catalog-content__name">Все товары</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-content__body">
+						<h2 class="catalog-content__title">Цветы</h2>
+						<div class="catalog-content__row">
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-1.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-2.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-3.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-4.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-5.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-6.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column hidden-column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image">
+										<a href="card.html"><img src="img/flower-7.png" alt=""></a>
+										<div class="catalog-content__button"><img src="img/catalog-btn.png" alt=""></div>
+									</div>
+									<a href="card.html" class="catalog-content__name">Наименование товара</a>
+									<div class="catalog-content__price">Цена р</div>
+								</div>
+							</div>
+							<div class="catalog-content__column">
+								<div class="catalog-content__item">
+									<div class="catalog-content__image icon-image">
+										<a href="#"><img src="img/catalog-icon.png" alt=""></a>
+									</div>
+									<div class="catalog-content__name">Все товары</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-content__footer">
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/dynamicadapt.js"></script>
+</body>
+</html>

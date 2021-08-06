@@ -1,0 +1,198 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>Корзина</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link active">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="basket-page">
+			<div class="container">
+				<a href="#" class="return__btn"></a>
+				<h1 class="basket__title">Корзина</h1>
+				<div class="basket__body">
+					<div class="basket-product__inner">
+						<div class="basket-product__item">
+							<div class="basket-product__name">Наименование</div>
+							<div class="basket-product__info">
+								<div class="basket-product__fields">
+									<div class="basket-product__info-left">
+										<div class="basket-product__adaptive-box">
+											<div class="basket-product__image">
+												<img src="img/basket-img1.png" alt="">
+											</div>
+											<div class="basket-product__bottom adaptive">
+												<p class="basket-product__quantity">В наличии:<span class="basket-product__value">6 ед.</span></p>
+												<div class="basket-product__price">Цена:<span class="basket-product__value">250250 р</span> </div>
+											</div>
+										</div>
+										<div class="basket-product__description">
+											<p class="basket-product__text">
+												Здесь должен быть текст Здесь должен быть текст Здесь должен быть текст
+											</p>
+											<div class="basket-product__info-right adaptive" data-da="basket-product__description,1,767">
+												<div class="basket-product__choice">
+													<div class="basket-product__choice-name">Количество шт.</div>
+													<div class="basket-product__choice-group">
+														<button class="basket-product__minus"></button>
+														<input type="number" class="basket-product__input" value="1" min="1" max="99">
+														<button class="basket-product__plus"></button>
+													</div>
+												</div>
+												<div class="basket-product__result">
+													<div class="basket-product__result-name">Сумма</div>
+													<div class="basket-product__result-price">250250 ₽</div>
+												</div>
+											</div>
+											<div class="basket-product__bottom">
+												<p class="basket-product__quantity">В наличии:<span class="basket-product__value">6 ед.</span></p>
+												<div class="basket-product__price">Цена:<span class="basket-product__value">250250 р</span> </div>
+											</div>
+										</div>
+									</div>
+									<div class="basket-product__info-right" data-da="basket-product__description,1,767">
+										<div class="basket-product__choice">
+											<div class="basket-product__choice-name">Количество шт.</div>
+											<div class="basket-product__choice-group">
+												<button class="basket-product__minus"></button>
+												<input type="number" class="basket-product__input" value="1" min="1" max="99">
+												<button class="basket-product__plus"></button>
+											</div>
+										</div>
+										<div class="basket-product__result">
+											<div class="basket-product__result-name">Сумма</div>
+											<div class="basket-product__result-price">250250 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="basket-product__item">
+							<div class="basket-product__name">Наименование</div>
+							<div class="basket-product__info">
+								<div class="basket-product__fields">
+									<div class="basket-product__info-left">
+										<div class="basket-product__adaptive-box">
+											<div class="basket-product__image">
+												<img src="img/basket-img2.png" alt="">
+											</div>
+											<div class="basket-product__bottom adaptive">
+												<p class="basket-product__quantity">В наличии:<span class="basket-product__value">6 ед.</span></p>
+												<div class="basket-product__price">Цена:<span class="basket-product__value">250250 р</span> </div>
+											</div>
+										</div>
+										<div class="basket-product__description">
+											<p class="basket-product__text">
+												Здесь должен быть текст Здесь должен быть текст Здесь должен быть текст
+											</p>
+											<div class="basket-product__info-right adaptive" data-da="basket-product__description,1,767">
+												<div class="basket-product__choice">
+													<div class="basket-product__choice-name">Количество шт.</div>
+													<div class="basket-product__choice-group">
+														<button class="basket-product__minus"></button>
+														<input type="number" class="basket-product__input" value="1" min="1" max="99">
+														<button class="basket-product__plus"></button>
+													</div>
+												</div>
+												<div class="basket-product__result">
+													<div class="basket-product__result-name">Сумма</div>
+													<div class="basket-product__result-price">250250 ₽</div>
+												</div>
+											</div>
+											<div class="basket-product__bottom">
+												<p class="basket-product__quantity">В наличии:<span class="basket-product__value">6 ед.</span></p>
+												<div class="basket-product__price">Цена:<span class="basket-product__value">250250 р</span> </div>
+											</div>
+										</div>
+									</div>
+									<div class="basket-product__info-right" data-da="basket-product__description,1,767">
+										<div class="basket-product__choice">
+											<div class="basket-product__choice-name">Количество шт.</div>
+											<div class="basket-product__choice-group">
+												<button class="basket-product__minus"></button>
+												<input type="number" class="basket-product__input" value="1" min="1" max="99">
+												<button class="basket-product__plus"></button>
+											</div>
+										</div>
+										<div class="basket-product__result">
+											<div class="basket-product__result-name">Сумма</div>
+											<div class="basket-product__result-price">250250 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="basket-product__footer">
+							<div class="basket-product__quantity-wrap">
+								<div class="basket-product__quantity-value">В корзине 2 товара</div>
+								<div class="basket-product__general-price">
+									<label>К оплате:</label>
+									<div class="basket-product__general-summ">550000 ₽</div>
+								</div>
+							</div>
+							<div class="basket-product__buttons">
+								<button class="basket-button__continue">Продолжить <br> покупки</button>
+								<button class="basket-button__verify">Оформить заказ</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/dynamicadapt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>Контакты</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link active">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="contacts-page">
+			<div class="container">
+				<a href="#" class="return__btn"></a>
+				<h1 class="contacts__title">Контакты</h1>
+				<div class="contacts__inner">
+					<div class="contacts-info">
+						<div class="contacts-info__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul class="contacts-info__list">
+										<li>Ул. Красноуфимская, д.1</li>
+										<li><a href="tel:7888654654654" class="contacts-info__link">тел: 7 (888) 654 654 654</a></li>
+										<li><a href="tel:7888321321321" class="contacts-info__link">тел: 7 (888) 321 321 321</a></li>
+										<li><a href="mailto:maksagro@mail.ru" class="contacts-info__link">email: maksagro@mail.ru</a></li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="contacts-info__list">
+										<li>Ул. Красноуфимская, д.1</li>
+										<li><a href="tel:7888654654654" class="contacts-info__link">тел: 7 (888) 654 654 654</a></li>
+										<li><a href="tel:7888321321321" class="contacts-info__link">тел: 7 (888) 321 321 321</a></li>
+										<li><a href="mailto:maksagro@mail.ru" class="contacts-info__link">email: maksagro@mail.ru</a></li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="contacts-info__list">
+										<li>Ул. Красноуфимская, д.1</li>
+										<li><a href="tel:7888654654654" class="contacts-info__link">тел: 7 (888) 654 654 654</a></li>
+										<li><a href="tel:7888321321321" class="contacts-info__link">тел: 7 (888) 321 321 321</a></li>
+										<li><a href="mailto:maksagro@mail.ru" class="contacts-info__link">email: maksagro@mail.ru</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="pagination"></div>
+						</div>
+						<div class="contacts__description">
+							<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.
+							</p>
+							<p>
+								Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст.
+							</p>
+						</div>
+					</div>
+					<div class="contacts-map">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A394759ae33037c0aa7ff32d58e78ed019a2b7db9631288b3b40d9a80a020799b&amp;source=constructor"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		const swiper1 = new Swiper('.contacts-info__slider', {
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			speed: 800,
+			autoHeight: true,
+			bulletClass: 'pagination',
+			pagination: {
+				el: ".pagination",
+				type: "bullets",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+</html>

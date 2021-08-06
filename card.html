@@ -1,0 +1,155 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>Карточка товара</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div data-da="catalog-content__item,2,991" class="catalog-cart__box adaptive">
+					<a href="basket.html" class="catalog__cart"><img src="img/cart.png" alt=""></a>
+					<span class="catalog__value">21+</span>
+				</div>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link active">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="card-page">
+			<div class="container">
+				<a href="#" class="return__btn"></a>
+				<div class="catalog-head card-head">
+					<div class="catalog-head__left">
+						<div class="breadcrumbs-container">
+							<div class="breadcrumbs">
+								<ul class="breadcrumbs__list">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="">Овощи</a></li>
+									<li><a href="">Перец болгарский</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-head__right">
+						<div class="catalog-cart__box">
+							<a href="basket.html" class="catalog__cart"><img src="img/cart.png" alt=""></a>
+							<span class="catalog__value">21+</span>
+						</div>
+					</div>
+				</div>
+				<div class="card-info__name adaptive">Перец болгарский</div>
+				<div class="card__body">
+					<div class="card__inner">
+						<div class="card-image__container">
+							<div class="image-slider__container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/card-img1.png" alt=""></div>
+									<div class="swiper-slide"><img src="img/card-img1.png" alt=""></div>
+									<div class="swiper-slide"><img src="img/card-img1.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="card-info">
+							<div class="card-info__name">Перец болгарский</div>
+							<div class="card-info__price">250000 ₽</div>
+							<div class="card-info__description">Здесь должен быть текст.</div>
+							<div class="card-pagination"></div>
+							<div class="card-info__text">
+								<p>Описание</p>
+								<p>Здесь должен быть текст. Здесь должен быть текст. Здесь должен быть текст</p>
+								<p>Здесь должен быть текст.</p>
+								<p>Здесь должен быть текст.</p>
+								<p>Здесь должен быть текст.</p>
+							</div>
+							<div class="card-info__bottom">
+								<button class="card-info__add-basket">Добавить в корзину</button>
+								<div class="card-info__group">
+									<button class="card-info__down"></button>
+									<input class="card-info__input" type="number" min="1" placeholder="1">
+									<button class="card-info__up"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-info__bottom adaptive">
+						<button class="card-info__add-basket">Добавить в корзину</button>
+						<div class="card-info__group">
+							<button class="card-info__down"></button>
+							<input class="card-info__input" type="number" min="1" placeholder="1">
+							<button class="card-info__up"></button>
+						</div>
+					</div>
+					<div class="card-info__description adaptive">
+						<p>Здесь должен быть текст.Здесь должен быть текст.Здесь должен быть текст.</p>
+						<p>Здесь должен быть текст.Здесь должен быть текст.Здесь должен быть текст.</p>
+						<p>Здесь должен быть текст.Здесь должен быть текст.Здесь должен быть текст.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		const swiper1 = new Swiper('.image-slider__container', {
+			loop: true,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 30,
+			speed: 800,
+			autoHeight: true,
+			bulletClass: '.card-pagination',
+			pagination: {
+				el: ".card-pagination",
+				type: "bullets",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+</html>

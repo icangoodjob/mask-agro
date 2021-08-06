@@ -1,0 +1,110 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->	
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных задач (не отображается)-->
+<head>
+	<!-- Заголовок страницы в браузере-->
+	<title>О нас</title>
+	<!--Кодировка страницы-->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fontlibrary.org//face/rawline" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<!--Отображаемое тело страницы-->
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+				<div class="header__burger-wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="index.html" class="header__link">Главная</a>
+						</li>
+						<li>
+							<a href="catalog.html" class="header__link">Каталог</a>
+						</li>
+						<li>
+							<a href="about.html" class="header__link active">О нас</a>
+						</li>
+						<li>
+							<a href="category.html" class="header__link">Категории</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="about-page">
+			<div class="container">
+				<a href="#" class="return__btn"></a>
+				<div class="about__body">
+					<h1 class="about__title">О компании</h1>
+					<div class="about-slider__container text-block__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<p>Здесь должен быть текстЗдесь должен быть текстЗдесь должен быть текст</p>
+								<p>Здесь должен быть текстЗдесь должен быть текстЗдесь должен быть текст</p>
+								<p>Здесь должен быть текстЗдесь должен быть текстЗдесь должен быть текст</p>
+							</div>
+							<div class="swiper-slide">
+								<p>Здесь должен быть текст</p>
+								<p>Здесь должен быть текст</p>
+							</div>
+							<div class="swiper-slide">
+								<p>Здесь должен быть текстЗдесь должен быть текстЗдесь должен быть текстЗдесь должен быть текст</p>
+								<p>Здесь должен быть текстЗдесь должен быть текстЗдесь должен быть текстЗдесь должен быть текст</p>
+								<p>Здесь должен быть тексЗдесь должен быть текстЗдесь должен быть текст</p>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="about_description">
+						Здесь должен быть текст. Здесь должен
+						быть текст. Здесь должен быть текст.
+						Здесь должен быть текст. Здесь должен
+						быть текст. Здесь должен быть текст.
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		const swiper1 = new Swiper('.text-block__slider', {
+			loop: true,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 30,
+			speed: 800,
+			autoHeight: true,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "bullets",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+</html>
